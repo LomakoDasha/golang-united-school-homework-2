@@ -16,17 +16,17 @@ func CalcSquare(sideLen float64, sidesNum amountOfSides) float64 {
 	var figureSquare float64
 
 	switch sidesNum {
-	case SidesTriangle:
+	case SidesCircle:
 		{
 			figureSquare = math.Pi * math.Pow(sideLen, 2)
 		}
-	case SidesSquare:
-		{
-			figureSquare = math.Pi * sideLen * sideLen
-		}
-	case SidesCircle:
+	case SidesTriangle:
 		{
 			figureSquare = (math.Sqrt(3) * sideLen * sideLen) / 4
+		}
+	case SidesSquare:
+		{
+			figureSquare = math.Pow(sideLen, 2)
 		}
 	default:
 		{
